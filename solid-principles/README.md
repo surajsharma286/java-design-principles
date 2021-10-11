@@ -17,8 +17,12 @@ D -> Dependency Injection <br>
 * SRP helps in reducing the tight coupling and this is how we can achieve loosely coupled software components.
 
 ### Code Demonstration
-com.suraj.srp package has App class that takes input from the user and produce the sum of the inputs. As part of the main program User inputs taken using Scanner class , Inputs are validated ( Allowed inputs are Integers only ) and finally is returned to the user.
-come.suraj.srp.refactor package contains the refactored code. App main class refactored to create separate class InputProcessor to take user Input, ViolationChecker class to check if the input provided is an Integer or not. Lastly the Operation class created to execute the Sum operation on the input pair.
-*Key Benefits*
-By creating separate class for taking the user Input , Validation of Input and Operation helps in reducing the Tight coupling. Each of the functionalities can be independently enhanced without impacting the main App class. 
+* com.suraj.srp package has App class that takes input from the user and produce the sum of the inputs. 
+* As part of the main program User inputs taken using Scanner class , Inputs are validated ( Allowed inputs are Integers only ) and finally is returned to the user.<br>
+* com.suraj.srp.refactor package contains the refactored code. App main class refactored to create separate class InputProcessor to take user Input, ViolationChecker class to check if the input provided is an Integer or not. 
+* Lastly the Operation class created to execute the Sum operation on the input pair.<br>
+
+#### Key Benefits
+* By creating separate class for taking the user Input , Validation of Input and Operation class helps in reducing the Tight coupling.
+* Each of the functionalities can be independently enhanced without impacting the main App class. 
 Logic of Validation, Operation completely abstracted.   
