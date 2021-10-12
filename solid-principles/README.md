@@ -40,7 +40,16 @@ Logic of Validation, Operation completely abstracted.
    2) Template Pattern.
   
 ### Code Demonstration
-* com.suraj.srp package has Multiple Interview Question classes that implements a common Interface "Interview Question".
+* com.suraj.ocp package has Multiple Interview Question classes that implements a common Interface "Interview Question".
 * Each Interview Question class overrides execute method vy its own implementation.
 * Interview Question Processor has no knowledge about Interview Question types. It calls the execute method.
 * This is a typical implementation of loosely coupled system.
+
+## Liskov Substitution Principle
+* Objects of a Superclass shall be replaceable with objects or its subclases without breaking the application.
+* Subtype must be substitutable for their base types. Child class should never break the parent class type definition.
+* Violation of Liskov principle is a latent violation of open/closed principle.
+
+### Code Demonstration
+* com.suraj.lsp package has Vehicle Abstract class that implements Fuel Interface. Fuel behavior has been abstracted to ensure Car can implement their own implementations. 
+* Liskov substitution principle can be achieved using Abstract class or through interface.
