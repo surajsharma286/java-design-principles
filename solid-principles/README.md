@@ -35,7 +35,7 @@ Logic of Validation, Operation completely abstracted.
 * Design and writing of Code should be done in a way that new functionality can be added with minimum changes in the existing code.
 * Closely related to Single Responsibility Principle.
 * Class should not extend other class explicitly - we should define common interface instead.
-* There are 2 important design patterns that guarantee that open/closed principle is not violated: 
+* There are 2 important design patterns that guarantee that open/closed principle not violated: 
    1) Strategy Pattern.
    2) Template Pattern.
   
@@ -53,3 +53,16 @@ Logic of Validation, Operation completely abstracted.
 ### Code Demonstration
 * com.suraj.lsp package has Vehicle Abstract class that implements Fuel Interface. Fuel behavior has been abstracted to ensure Car can implement their own implementations. 
 * Liskov substitution principle can be achieved using Abstract class or through interface.
+
+## Interface Segregation Principle
+* Software modules should not be forced to depend upon the interface that they do not use. 
+* Sometimes we want to implement a given interface just for the sake of the methods defined in the interface. 
+* We end up with fat interfaces - containing more methods than actual class needs.
+* It's not good if an interface has large number of methods.
+* When possible we should break interface in many smaller ones, so they better satisfy clients needs.
+
+### Code Demonstration
+* com.suraj.isp package has Tree Interface that contains multiple methods. 2 of the methods are specific to Balanced Tree.
+* Tree interface is a fat interface because it has methods that will not be used by implementing class i.e., Binary Search Tree .  
+* This forces us to implement empty implementation for the methods which are not applicable to Binary Search Tree. 
+* com.suraj.isp.refactor package contains refactored code where the Rotation specific methods taken out and new Interface RotationTree is created.
