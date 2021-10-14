@@ -66,3 +66,15 @@ Logic of Validation, Operation completely abstracted.
 * Tree interface is a fat interface because it has methods that will not be used by implementing class i.e., Binary Search Tree .  
 * This forces us to implement empty implementation for the methods which are not applicable to Binary Search Tree. 
 * com.suraj.isp.refactor package contains refactored code where the Rotation specific methods taken out and new Interface RotationTree is created.
+
+## Dependency Inversion Principle
+* High level Modules should not depend on low level modules. Both should depend on abstractions.
+* We should avoid tightly coupled code, creating an object of a class with new Keyword results tight coupling within classes.
+* Dependency inversion principle helps to create loosely coupled software modules.
+* DI can be achieved using Factory Pattern , Service Locator Pattern and Dependency Injection.
+
+### Code Demonstration
+* com.suraj.di package has Database controller class that has tightly coupling with MySQLDatabase class.
+* Tight binding happens when we program to a class instead of interface.
+* In the com.suraj.di.refactor package DatabaseController refactored to depend on new Database interface. Both MySQL and Oracle Database class implements the Database Interface.
+* Now the Database can be dynamically changed from App without impacting the Controller class.
