@@ -77,13 +77,24 @@ Abstract factory lets you create a Petrol Factory or an Electric Factory. Petrol
 * In Java, we have to implement Cloneable interface and define clone() method.
 #### Code Demonstration
 * com.suraj.creational.prototype package contains a simple example of Prototype pattern.
-#### Key Benefits
 
 ## Behavioral Design Patterns
+In Software engineering behavioral design pattern are pattern that identify common communication patterns between object. These patterns increase flexibility in carrying out the communication.
 
 ### Strategy Pattern
+* Strategy pattern (or policy pattern) enable selecting an algorithm at run time.
+* Define a family of algorithm, put each of them into a separate class and make their objects interchangeable.
+  * Strategy Pattern based on following principles,
+  Encapsulate what is changing - Encapsulation is an important concept in OOP. Consider the classes and methods that varies and encapsulate it. Later we can change or update parts of application that change frequently without affecting the static parts.
+    
+  * Program to Supertype - Actual Run time object should not be locked into the code. Type of variable should be abstract(interface or abstract).
+  * Favor Composition over Inheritance - Gives more flexibility and you change behavior at run time.
+  
+
+
 #### Code Demonstration
-#### Key Benefits
+* com.suraj.behavioral package contains Strategy interface this ensures Open/closed principle is not violated.
+* OperationsManager class acts as abstraction layer between the high level modules and low level modules  
 
 ### Observer Pattern
 #### Code Demonstration
