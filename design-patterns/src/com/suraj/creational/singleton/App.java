@@ -1,4 +1,4 @@
-package com.suraj.singleton;
+package com.suraj.creational.singleton;
 
 public class App {
 

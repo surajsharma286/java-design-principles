@@ -1,4 +1,4 @@
-package com.suraj.builder;
+package com.suraj.creational.builder;
 
 public class Student {
     private String name;

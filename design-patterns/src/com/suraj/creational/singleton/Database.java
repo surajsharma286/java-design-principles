@@ -1,4 +1,4 @@
-package com.suraj.singleton;
+package com.suraj.creational.singleton;
 
 public enum Database {
     // Acquiring the INSTANCE is Thread Safe as Enums are compile constants

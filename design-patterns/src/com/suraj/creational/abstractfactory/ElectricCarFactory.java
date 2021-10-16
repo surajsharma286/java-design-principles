@@ -1,4 +1,4 @@
-package com.suraj.abstractfactory;
+package com.suraj.creational.abstractfactory;
 
 public class ElectricCarFactory implements AbstractFactory{
     @Override

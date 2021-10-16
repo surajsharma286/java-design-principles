@@ -1,6 +1,4 @@
-package com.suraj.singleton;
-
-import javax.xml.crypto.Data;
+package com.suraj.creational.singleton;
 
 public class DatabaseConnector {
     // lazy

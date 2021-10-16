@@ -1,4 +1,4 @@
-package com.suraj.factory;
+package com.suraj.creational.factory;
 
 public class Tiger implements Animal{
     @Override

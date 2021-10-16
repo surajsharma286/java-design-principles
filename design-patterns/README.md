@@ -17,7 +17,7 @@ Creational patterns provide various object creation mechanisms which increase fl
 * It is extremely crucial for Logging.
 
 #### Code Demonstration
-* com.suraj.singleton package contains 2 implementation of Singleton pattern.
+* com.suraj.creational.singleton package contains 2 implementation of Singleton pattern.
 * DatabaseConnector class leverage Private Constructor with static getInstance method. GetInstance method has Synchronized block that blocks multiple Threads to create multiple instances. 
 * DatabaseConnector class is not 100 % safe as multiple instance can be created through "Reflection Attack". Also, the Synchronized blocks are slower.
 * Database class leverage Enum to create Singleton object of Database class.
@@ -37,7 +37,7 @@ Creational patterns provide various object creation mechanisms which increase fl
 * We should separate static classes in the application from the classes that change frequently.
 
 #### Code Demonstration
-* com.suraj.factory package has AnimalFactory class that contains the logic to instantiate and return Object of type Animal based on the type of animal passed.
+* com.suraj.creational.factory package has AnimalFactory class that contains the logic to instantiate and return Object of type Animal based on the type of animal passed.
 * Factory lets you add new Implementation of Animal types without introducing new keyword for each of new implementation of Animal Interface i.e., BobCat().
 * We don't expose the creation logic to the client and refer created object using a standard interface.
 
@@ -50,7 +50,7 @@ Creational patterns provide various object creation mechanisms which increase fl
 
 Abstract factory lets you create a Petrol Factory or an Electric Factory. Petrol factory will produce Petrol cars and Electric factory will produce Electric cars.
 #### Code Demonstration
-* com.suraj.abstractfactory package has 2 Factory classes for assembling Electric cars and Petrol Cars. 
+* com.suraj.creational.abstractfactory package has 2 Factory classes for assembling Electric cars and Petrol Cars. 
 * FactoryProducer class create the Car factory based on the Type of factory.
 
 
@@ -67,13 +67,16 @@ Abstract factory lets you create a Petrol Factory or an Electric Factory. Petrol
 * There can not be any problem because of concurrent updates - when dealing with multiple threads or processes.
 
 #### Code Demonstration
-* com.suraj.builder package has 2 implementation of Builder pattern - Student and Person.
-* Builder pattern achieved by creating static inner class Builder that all the required parameter to be initialized by passing them to constructor and optional parameter by having setter fucntions.
-
-#### Key Benefits
+* com.suraj.creational.builder package has 2 implementation of Builder pattern - Student and Person.
+* Builder pattern achieved by creating static inner class Builder that all the required parameter to be initialized by passing them to constructor and optional parameter by having setter functions.
 
 ### Prototype Pattern
+* Aim is to copy existing objects without depending on those given classes.
+* Delegate the object creation problem to the object itself - Cloning.
+* An Object that support closing operation called a prototype.
+* In Java, we have to implement Cloneable interface and define clone() method.
 #### Code Demonstration
+* com.suraj.creational.prototype package contains a simple example of Prototype pattern.
 #### Key Benefits
 
 ## Behavioral Design Patterns

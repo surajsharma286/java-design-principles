@@ -1,4 +1,4 @@
-package com.suraj.abstractfactory;
+package com.suraj.creational.abstractfactory;
 
 public class App {
     public static void main(String[] args) {

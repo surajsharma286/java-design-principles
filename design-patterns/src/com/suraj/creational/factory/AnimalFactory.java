@@ -1,4 +1,4 @@
-package com.suraj.factory;
+package com.suraj.creational.factory;
 
 public class AnimalFactory {
     public static  Animal getAnimal(AnimalType type){
