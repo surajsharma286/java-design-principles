@@ -56,7 +56,20 @@ Abstract factory lets you create a Petrol Factory or an Electric Factory. Petrol
 
 
 ### Builder Pattern
+* Builder Pattern is maybe the #1 design pattern in software engineering.
+* Main motivation behind builder pattern ? Classes with large number of variables, there may be a large amount of parameters in a constructor, several instance variables in a given class, easy to confuse parameters.
+* Telescoping constructors - If we have to add another optional parameter to  then we have to add another constructor. This results in multiple constructors calling constructor from one to another.
+* With Builder pattern satisfies the immutable property. Object created at the last step,
+  
+  Person p = new Person.Builder().setAge(10),setName("Kevin").build();</br>
+
+  
+* There can not be any problem because of concurrent updates - when dealing with multiple threads or processes.
+
 #### Code Demonstration
+* com.suraj.builder package has 2 implementation of Builder pattern - Student and Person.
+* Builder pattern achieved by creating static inner class Builder that all the required parameter to be initialized by passing them to constructor and optional parameter by having setter fucntions.
+
 #### Key Benefits
 
 ### Prototype Pattern
