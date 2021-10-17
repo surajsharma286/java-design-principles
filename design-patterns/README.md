@@ -90,15 +90,26 @@ In Software engineering behavioral design pattern are pattern that identify comm
   * Program to Supertype - Actual Run time object should not be locked into the code. Type of variable should be abstract(interface or abstract).
   * Favor Composition over Inheritance - Gives more flexibility and you change behavior at run time.
   
-
-
 #### Code Demonstration
-* com.suraj.behavioral package contains Strategy interface this ensures Open/closed principle is not violated.
+* com.suraj.behavioral package contains Strategy interface this ensures Open/closed principle not violated.
 * OperationsManager class acts as abstraction layer between the high level modules and low level modules  
 
 ### Observer Pattern
+* Observer pattern defines one-to-many dependency between object or entities.
+* When one object changes state all of its dependents are notified and updated automatically.
+* Subject is the Object that being monitored and observers (or listeners) are dependent on the subject.
+* Help in achieving loosely couple software systems.
+* When 2 objects loosely coupled they can interact but they little knowledge of each other. 
+* Only thing subject knows about an observer is that it implements a certain interface.
+* We can add observers whenever we want - just have to implement the Observer interface. We can change Subject or observer independently.
+
+![img.png](img.png)
+
 #### Code Demonstration
-#### Key Benefits
+* com.suraj.behavioral.observer package contains simple implementation of Observer pattern with Weather Station as Observer and WeatherObserver as an Observer.
+* com.suraj.behavioral.observer.stock package contains stock exchange simulator program. StockExchange class generates random values of stock prices. Trader is the observer interface , it has 2 implementation classes.
+
+
 
 ### Command Pattern
 #### Code Demonstration
