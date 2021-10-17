@@ -133,8 +133,12 @@ In Software engineering behavioral design pattern are pattern that identify comm
 * Switcher class acts as Invoker which contains methods to add and execute commands. Note the Switcher class has no knowledge of how Lights will be turned on/off, it knows only about Command interface - execute method.
 
 ### Iterator Pattern
+Iterator pattern is very commonly used design pattern in Java. This is used to get a way to access the element of a collection object in sequential manner without any need to know its underlying representation.
+
 #### Code Demonstration
-#### Key Benefits
+* com.suraj.behavioral.iterator package contains a NameIterator class that implements the Iterator interface.
+* Iterator interface has 2 methods - next() and hasNext().
+* NameRepository class uses the Name Iterator to read list of names.
 
 ### Template Pattern
 #### Code Demonstration
