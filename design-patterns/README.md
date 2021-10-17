@@ -112,8 +112,25 @@ In Software engineering behavioral design pattern are pattern that identify comm
 
 
 ### Command Pattern
+* Aim is to achieve separation of concerns. Command layer acts as abstract layer and helps in achieving loose coupling.
+* User interface component knows nothing about the underlying business logic or the model.
+* There are 4 component of command pattern - command, receiver, invoker and client,
+  * Command : It knows about receiver and invokes a method of the receiver. Value for parameters of the receiver method stored in the command.
+  * Receiver : Its does the work itself.
+  * Invoker : Knows how to execute a command and optionally does bookkeeping about command execution. Invoker does not know anything about concrete command , it knows only about command interface.
+  * Client : Client decides which commands to execute. To execute a command it passes the command object to the invoker object.
+  
+* Advantages :
+  * Loosely coupled Design and Single Responsibility : We can decouple classes that invoke the operation, and the classes that will execute the operation.
+  * Open/Closed Principle : We can add commands without modifying existing code.
+  * Implement Undo/Redo Operations : We do not have to execute the commands immediately - we can store the commands in the data structure.
+  
+
 #### Code Demonstration
-#### Key Benefits
+* com.suraj.behavioral.command package has the simple implementation of Command Pattern.
+* Light Class acts as a Receiver, Command Interface has only one method execute.
+* There are 2 commands implementation created - TurnOnCommand and TurnOffCommand.
+* Switcher class acts as Invoker which contains methods to add and execute commands. Note the Switcher class has no knowledge of how Lights will be turned on/off, it knows only about Command interface - execute method.
 
 ### Iterator Pattern
 #### Code Demonstration
