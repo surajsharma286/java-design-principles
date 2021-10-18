@@ -158,11 +158,19 @@ Iterator pattern is very commonly used design pattern in Java. This is used to g
 #### Code Demonstration
 * com.suraj.behavioral.nullobject package contains a simple implementation of Null object pattern. NullCustomer is returned when Customer do not exist in Database and Customer object returned when Customer with name exists.
 
-#### Key Benefits
-
 ### Visitor Object Pattern
+* Visitor pattern is a way of separating an algorithm from an object structure on which it operates.
+* Visitor lets you define a new operation without changing the classes of the elements on which it operates.
+* Visitor pattern is applicable when many distinct and unrelated operations needs to performed on an object structure, and you want to avoid polluting their classes with these operations.
+* Visitor lets you keep related operations together by defining them in one class.
+* Classes defining the object structure rarely change, but you often want to define new operations over the structure.
+* Visitor pattern is useful when the Element Class Hierarchy is stable, but you are continually adding operations or changing algorithms, then visitor pattern will help you in managing the changes.
+
 #### Code Demonstration
-#### Key Benefits
+* com.suraj.behavioral.visitor package contains a simple implementation of Visitor pattern. Shape interface has "accept()" method that accepts the generic Visitor interface.
+* Shape interface has 2 implementation classes - Circle and Rectangle. Each of the classes call their specific method of Visitor interface.
+* ShapeExporter Interface is the concrete implementation of Visitor interface.
+* Finally, we leverage the Iterator pattern to traverse through the object hierarchy and apply the Visitor interface accept() on each object.
 
 ## Structural Design Patterns
 
