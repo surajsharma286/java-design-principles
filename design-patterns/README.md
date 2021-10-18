@@ -151,7 +151,13 @@ Iterator pattern is very commonly used design pattern in Java. This is used to g
 
 
 ### Null Object Pattern
+* Good to avoid null object references for e.g., it's good to return empty ArrayList instead of null. 
+* It can be very elaborate to deal with null references.
+* Solution is to implement Null Object design pattern - Create an abstract class specifying various operation to be done. Concrete classes extending this class and null object class providing do nothing implementation of this class.
+
 #### Code Demonstration
+* com.suraj.behavioral.nullobject package contains a simple implementation of Null object pattern. NullCustomer is returned when Customer do not exist in Database and Customer object returned when Customer with name exists.
+
 #### Key Benefits
 
 ### Visitor Object Pattern
