@@ -175,8 +175,20 @@ Iterator pattern is very commonly used design pattern in Java. This is used to g
 ## Structural Design Patterns
 
 ### Decorator Pattern
+* With Decorator pattern we can attach additional responsibilities to an object dynamically.
+* Decorator provides a flexible alternative to subclassing and extending the functionality.
+* Inheritance is static in nature, and we should favor composition over inheritance.
+* Decorator pattern is very common in Java - Input stream.
+* Sometimes we want to add responsibilities to individual objects, not to an entire class. A Graphical user interface toolkit, for example should let you add properties like Border or behaviors like scrolling any user interface components.
+* Applicability -
+  * To add responsibilities to individual objects dynamically and transparently that is without affecting other objects.
+  * For responsibilities that can be withdrawn.
+  * When extensions by subclassing is impractical - would produce explosion of subclasses to support evrey combination. or a class definition may be hidden or otherwise unavailable for subclassing.
+
+
 #### Code Demonstration
-#### Key Benefits
+* com.suraj.structural.decorator package contains simple implementation of Decorator pattern.
+* BeverageDecorator interface acts as a wrapper for Beverage, and it allows change the behavior to an existing Beverage object dynamically.
 
 ### Facade Pattern
 #### Code Demonstration
