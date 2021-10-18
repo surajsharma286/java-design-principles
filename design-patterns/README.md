@@ -46,7 +46,7 @@ Creational patterns provide various object creation mechanisms which increase fl
 * It is an interface responsible for creating a factory of related objects without explicitly specifying their classes.
 * Abstract factory create factory pattern , it is producing families of related objects.
 
-![img.png](resources/img.png)
+![img.png](resources/abstract_factory.png)
 
 Abstract factory lets you create a Petrol Factory or an Electric Factory. Petrol factory will produce Petrol cars and Electric factory will produce Electric cars.
 #### Code Demonstration
@@ -103,7 +103,7 @@ In Software engineering behavioral design pattern are pattern that identify comm
 * Only thing subject knows about an observer is that it implements a certain interface.
 * We can add observers whenever we want - just have to implement the Observer interface. We can change Subject or observer independently.
 
-![img.png](img.png)
+![img.png](resources/observer.png)
 
 #### Code Demonstration
 * com.suraj.behavioral.observer package contains simple implementation of Observer pattern with Weather Station as Observer and WeatherObserver as an Observer.
@@ -142,7 +142,7 @@ Iterator pattern is very commonly used design pattern in Java. This is used to g
 
 ### Template Pattern
 * There are several operations and procedure in software engineering that are very similar to each other. Superclass created defining the common behaviors and subclasses will override the specific steps and decide the concrete behaviors of the methods.
-  ![img_1.png](img_1.png)
+  ![img_1.png](resources/template.png)
 * Template pattern is similar to Strategy pattern . Template pattern is static in nature where binding defined at compile time through inheritance and in case of Strategy pattern its dynamic based on composition. Usually Strategy pattern is more flexible.
 * Template pattern operates on class level(static) while Strategy pattern operates on object level(dynamic).
 
