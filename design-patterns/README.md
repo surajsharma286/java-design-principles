@@ -191,8 +191,13 @@ Iterator pattern is very commonly used design pattern in Java. This is used to g
 * BeverageDecorator interface acts as a wrapper for Beverage, and it allows change the behavior to an existing Beverage object dynamically.
 
 ### Facade Pattern
+* Facade pattern can provide a relatively easy to understand interface to a rather complex system.
+* When we are dealing with a complex library, or a framework then our classes may become tightly coupled to the implementation of the framework or library.
+* Facade provides limited functionality but this is the main advantage - It only provides the features the client needs.
+
 #### Code Demonstration
-#### Key Benefits
+* com.suraj.structural.facade package contains simple implementation of Facade pattern.
+* SortingManager class acts as facade and provides a simple interface for different algorithm. 
 
 ### Flyweight Pattern
 #### Code Demonstration
