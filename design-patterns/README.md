@@ -141,8 +141,14 @@ Iterator pattern is very commonly used design pattern in Java. This is used to g
 * NameRepository class uses the Name Iterator to read list of names.
 
 ### Template Pattern
+* There are several operations and procedure in software engineering that are very similar to each other. Superclass created defining the common behaviors and subclasses will override the specific steps and decide the concrete behaviors of the methods.
+  ![img_1.png](img_1.png)
+* Template pattern is similar to Strategy pattern . Template pattern is static in nature where binding defined at compile time through inheritance and in case of Strategy pattern its dynamic based on composition. Usually Strategy pattern is more flexible.
+* Template pattern operates on class level(static) while Strategy pattern operates on object level(dynamic).
+
 #### Code Demonstration
-#### Key Benefits
+* com.suraj.behavioral.template package contains the example code demonstrating the template pattern. In both the examples, template method is final so that subclasses can not override the behavior.
+
 
 ### Null Object Pattern
 #### Code Demonstration
