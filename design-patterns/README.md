@@ -200,10 +200,17 @@ Iterator pattern is very commonly used design pattern in Java. This is used to g
 * SortingManager class acts as facade and provides a simple interface for different algorithm. 
 
 ### Flyweight Pattern
-#### Code Demonstration
-#### Key Benefits
+* A Flyweight is an object that minimizes memory usage by sharing as much data as possible with other similar objects.
+* Flyweight pattern is useful in Game Development.
+* The constant data associated with a class or object is the intrinsic state. Parameters of the Objects that are unique called extrinsic state. Flyweight pattern suggest not to store these features in the given object.
+* Objects storing the intrinsic states exclusively are called Flyweights. Store extrinsic state in one dimensional array.
+
 
 ### Adapter Pattern
+* Adapter Pattern allows objects with incompatible interfaces to collaborate and work together. It is often used to make existing classes work with others without modifying their source code.
+* There are several applications that rely on legacy code, and some features can not be used in the exact same way. We need Adapter pattern to make this compatible.
+
 #### Code Demonstration
-#### Key Benefits
+* com.suraj.structural.adapter package contains the simple implementation of Adapter pattern. In the sample code Bicycle class is an incompatible class with Vehicle interface.
+* BicycleAdapter helps to adapt the Bicycle class to Vehicle interface.
 
